@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* I used Andy's example submission style sheet as the beginning point - my page assumed his exact style when I pasted it in. But I wanted my own fonts and color scheme. So I pasted his individual style elements one by one (body, h1, p, .lesson, etc.) and started playing with each. Finally, I  figured out my own background color and font-family style scheme. An aspect of this was figuring out how to import fonts from Google Font. See comments below */
+
+body {
+	padding: 50px 50px; /*I changed the padding from "20px 10px" */
+	font-family: 'Open Sans', sans-serif;/* I changed from Helvetica to H. Neue */
+	max-width: 2000px; /* I played around with max-width */
+	margin: 0 auto; 
+	font-size: 1.2em; /* I reduced the font-size from 1.4em*/
+}            
+
+h1 {
+	text-align: center; /* I changed it from center to left */
+	color: #7c795d; /* I changed the h1 color */
+}
+
+h2 {
+	margin: 10px;
+  text-align: center;
+}
+
+.lesson {
+	background-color: #fff4a3; /* Changed the background color */
+	border-radius: 50px;
+	color: #7c795d;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.concept {
+	background-color: #50d07d; /* Changed the background color */
+	padding: 4px;
+	margin: 10px;
+	border-radius: 20px;
+	color: black;
+}
+
+.concept-title {
+	font-size: 20px;
+	margin: 8px;
+	text-align: center;
+	color: #294860;
+}
+
+.concept-description {
+	font-weight: 300;
+	margin: 15px;
+}
+
+p {
+	margin: 15px 0; /* I changed the paragraph margin from 10 to 15px */
+}
+
+ul {
+	list-style-type: upper-roman; /* I changed "none" to list-style-type just for fun */
+} 
+
+
+
+
+
