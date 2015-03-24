@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Stephen Calenzani</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<!-- I followed Andy's basic formula but did NOT just cut and paste. My website contains the essential explanations needed (such as DRY) and also additional notes that I thought were important. And since my sub headings are different I had to customize my TOC and "a href" links and make sure they worked properly (was a slog). I also had to ensure my "div" elements divided the webpage the way I designed them to (no easy task). I bought a HTML/CSS textbook and learned the brave new world of HTML5. I used some of these elements in the **head** section of my page. Finally, I had to figure out how to center my image using "div" style elements. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+  <title>Stephen's First Nanodegree Project</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">Thinking like a programmer</a></li>
+          <li><a href="#lesson-1-2">Computers are Stupid</a></li>
+          <li><a href="#lesson-1-3">Programmers Shouldn't Remember Everything</a></li>
+          <li><a href="#lesson-1-4">The Web and its Major Components</a></li>
+          <li><a href="#lesson-1-5">HTML: Markup, Tags, Atributes, Elements and Structure</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Strutured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Creating a Webpage from a Graphic Design</a></li>
+          <li><a href="#lesson-2-2">Webpage Design Basics</a></li>
+          <li><a href="#lesson-2-3">How Browsers Recreate Websites Using Languages and the DOM</a></li>
+          <li><a href="#lesson-2-4">DOM: The Webpage's Tree-like Structure</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">What is CSS Style</a></li>
+          <li><a href="#lesson-3-2">Boxes, Boxes Everywhere</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Udacity Nanodegree Notes<br>Intro to Programming</h1>
+    <div class="lesson">
+      <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2> 
+      <div class="concept" id="lesson-1-1">
+        <div class="concept-title">
+        <b>Thinking Like a Programmer</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          Programmers and coders use procedural thinking - taking a big problem and breaking down the solution into a set of steps - in order to write valid and useful code. Some examples of the types of thinking involved are the following:
+        </p>
+        <ul> 
+          <li>Abstract thinking - 1+1=2
+          <li>Systematic debugging - systemic way of solving problems
+          <li>Technological empathy - thinking the way a computer does - looking at code and imagining what it looks like in a webpage, and looking at a webpage and seeing code
+          <li>Systems thinking - taking one big idea and breaking it down into component parts (other 3 mentioned, above)
+        </ul>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-2">
+      <div class="concept-title">
+        <b>Computers Are Stupid</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          Programmers need to write the way a computer understands. You need to know the correct “syntax.”
+        </p>
+        <p>
+          Why? Because the computer can’t read your mind, it can only interpret what it sees in the code. If you forget to end a tag with a closing element, for example, forget to end an “em” tag, then it will assume that you want the rest of the narrative to be italicized.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-3">
+      <div class="concept-title">
+        <b>Programmers Shouldn’t Remember Everything</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          This idea just highlights the fact that programmers, in this day of readily available information on the internet, shouldn’t feel that they need to memorize everything like in the past. You can just look it up. It’s more important to understand basic concepts.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-4">
+      <div class="concept-title">
+        <b>The Web and its Major Components</b> 
+      </div>
+      <div class="concept-description">
+        <p>
+          Invented 1990’s - now has 30 billion webpages, it's basically a collection of HTML documents (HTML = Hypertext Markup Language). HTML language is what glues everything together on the web - text, videos, images. The links between webpages is what makes the web “weblike.”
+        </p>
+        <p>
+          The web is basically made up of three components: You, your computer and your browser; the internet, and servers. The browser makes requests via the internet to servers with a protocol called HTTP, or Hypertext Transfer Protocol. The server responds with files that your browser displays - browsers include IE, Chrome, Firefox. Servers are computers that are optimized for hosting files instead of browsing.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-5">
+      <div class="concept-title">
+        <b>HTML: Markup, Tags, Elements, Attributes and Structure</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML docs are the heart of the web and are made up of:
+        </p>
+        <ul>
+          <li>Text content - what you see
+          <li>Mark up - what it looks like or how it is arranged (not seen)
+          <li>References to other docs (images, videos)
+          <li>Links to other pages
+        </ul>
+        <p>
+          <b>HTML markup:</b> HTML markup is made up of tags, which are constructed like this: &lt;opening tag&gt;content&lt;/closing tag&gt;. Examples:
+        </p>
+        <ul>
+          <li>&lt;b&gt; tag - makes content bold
+          <li>&lt;em&gt; tag - means emphasis - makes content italicized
+          <li>&lt;a&gt; tag - anchor tag - this is for making links
+        </ul>
+          <b>HTML attribute tags:</b> An HTML attribute is a modifier of an HTML element. They are usually added to a HTML start tag, which along with content and end tag comprises most HTML elements. Particular attributes are only supported by particular element types; if they are added to elements that do not support them they will not function (from the <a href="http://en.wikipedia.org/wiki/HTML_attribute">HTML attribute</a> Wiki page).  Examples:
+        <ul>
+          <li>&lt;a href = “www.reddit.com”&gt;derp &lt;/a&gt; = derp
+          <li>&lt;a href = “www.w3c.com”&gt; HTML &lt;/a&gt; = HTML
+          <li>&lt;a href = “www.udacity.com”&gt;my favorite &lt;/a&gt; = my favorite
+        </ul>
+        <p>
+          <b>Image tag:</b> &lt;img&gt; is used to download images. For example: &lt;img src = “url” alt = “text”&gt;. “Url” is for the image to download. “Text” is for broken requests - the text that is displayed if image does not load. The image tag does not have or need a closing tag - it’s a “void tag” - it has no content.
+        </p>
+        <p>
+          <b>Whitespace:</b> When you enter text in multiple lines, in HTML it renders it in single space. &lt;br&gt; is to create a space break. This is another example of a void tag. To make double spaces you can use either a &lt;br&gt; or a &lt;p&gt; tag. To use &lt;br&gt; as a double space, you just use two in a row: &lt;br&gt; &lt;br&gt; &lt;p&gt; is a “block text” - you need a closing tag: &lt;p&gt; narrative &lt;/p&gt;
+        </p>
+        <p>
+          <b>Inline and block elements:</b> "br" is an “inline element” - just ends a line. "p" narrative is a “block element” - it makes an invisible box to put narrative. The box has width and height.
+        </p>
+        <p>
+          <b>Span and Div Elements:</b> The "Span" and "Div" tags contain their content: Span is inline and is written like this: &lt;span&gt; text &lt;/span&gt;. Div is block and is written like this: &lt;div&gt; text &lt;/span&gt;. Unlike **div**, which is formatted with line breaks, the **span** element does not have any automatic formatting. In addition to being a block element, **div** also allows you to put footnotes on the page with a **div** element to indicate that everything inside of that div is "footnote material". And you could also style a **div** element by adding a specific class or ID to it.
+        </p>
+        <p>
+          <b>Structure of HTML Document</b>
+        </p>
+        <p>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html lang=en&gt;<br>
+          &lt;head&gt;<br>
+          &lt;meta charset="utf-8"&gt;<br><br>
+          &lt;title&gt;Title&lt;/title&gt;<br>
+          &lt;link rel="stylesheet" href="css/styles.css?v=1.0"&gt;
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;b&gt;content&lt;/b&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;<br>
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="lesson">
+    <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2> 
+    <div class="concept" id="lesson-2-1">
+      <div class="concept-title">
+        <b>Creating a Webpage From a Graphic Design</b> 
+      </div>
+      <div class="concept-description">
+        <p>
+          Imagine you were handed a web design from your company’s graphic designer. You have to take this and translate it into an actual website. How do you do this? You first need a conceptual understanding of website design and how browsers retrieve and recreate webpages. 
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-2">
+      <div class="concept-title">
+        <b>Webpage Design Basics</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          A house has frame, style and interactive elements. Webpages use different languages to build these elements.
+        </p>
+        <ul>
+          <li>The frame created by HTML (HyperText Markup Language) is like the house structure. Where are the walls placed? What room is your living room, bedroom? Kitchen?
+          <li>Cascading Style Sheets or CSS language is like the house style - what color are the walls? What kind of carpeting? What decorations?
+          <li>The interactive elements created by JavaScript (JS) is like your garage door opener or TV remote control lets you interact with your house, JS lets you interact with your webpage
+        </ul>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-3">
+      <div class="concept-title">
+        <b>How Browsers Recreate Websites Using Languages and the DOM</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          Let’s say you build a website, which is made up of a number of webpages built with the languages mentioned above - essentially a collection of one or more HTML documents that sit in your computer. And let’s say somebody want to access these webpages. The person’s browsers uses Hypertext Transfer Protocol, or HTTP to “request” your webpage (see “Basics of the Web, above.) Once it retrieves this information, it has to recreate this webpage in the computer. How does this happen? Via the Document Object Model, or DOM. 
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-4">
+      <div class="concept-title">
+        <b>DOM: The Webpage’s Tree-like Structure</b>
+      </div>
+      <p>
+        Here’s a trick: Using Google Chrome, select Developer Tools and mouse over the document. You can see that the browser interprets each section of the webpage as a a branching structure with sideways triangles which have opening and closing tags. 
+      </p>
+      <p>
+        This structure is called the “Document Object Model.” It looks very much like the actual HTML code retrieved but it more than that. The DOM, according to 3WC, is a set of rules for representing and interacting with objects in HTML and other markup languages like CSS. DOM takes the retrieved code and interprets it so that the browser can understand how to “recreate” your webpage in the other computer.
+      </p>
+      <p>
+        How does this happen? The browser uses DOM’s rules of how to interact with the HTML, CSS and JS code to classify page content: HTML classifies what is text and what is image, and CSS classifies style.
+      </p>
+      <p>
+        For example, HTML elements include structural elements like the “head” and the “body,” which can branch out to H1 and DIV elements, which can themselves branch out other elements. Below is an example:
+      </p>
+        <div style="text-align: center"><img src="http://www.w3schools.com/js/pic_htmltree.gif" alt="Example of DOM Structure" style="width:300px;height:300px"></div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2> 
+    <div class="concept" id="lesson-3-1">
+      <div class="concept-title">
+        <b>Styling and Avoiding Repetition with CSS</b> 
+      </div>
+      <div class="concept-description">
+        <p>
+          Cascading Style Sheets (CSS) allows you to use a specific coding syntax and rules to change how elements look on the page: size of font, color, background, order, position. CSS also helps programmers avoid repetition by enabling the separation of the web "structure" code (HTML) from the "style" code (CSS). 
+        </p>
+        <p>
+          It does so by labeling each element you want to style in HTML, and then enabling you to link these elements to the CSS style code in a separate file. Since the style code is physically separate from the structure code, you can then change the CSS without touching the HTML. 
+        </p>
+        <p>
+          This is an essential element of coding called DRY: "Don't Repeat Yourself."
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-3-2">
+      <div class="concept-title">
+        <b>Boxes, Boxes Everywhere</b> 
+      </div>
+      <div class="concept-description">
+        <p>
+          Everything on a webpage is a box, even images of circles. 
+          When you click on circles with developer tools, you see a box surrounding the circle. When you go to style, you an change the pix, color and see the result.
+        </p>
+        <p>
+          How to Draw Boxes: Start with a web design and choose the big box that is whole page and divide it into smaller boxes, you can use a pencil to do so. You define these boxes with a “div” tag. Each box equals different div tags.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+</body>
+
+</html>
